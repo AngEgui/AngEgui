@@ -20,12 +20,56 @@
 }
 
 
-@font-face {
-    font-family: 'Glass Anticua';
-    src: url('fonts/glass-anticua.woff') format('woff');
-    font-weight: normal;
+.antic-regular {
+    font-family: "Antic", serif;
+    font-weight: 400;
     font-style: normal;
-}
+  }
+
+
+  .glass-antiqua-regular {
+    font-family: "Glass Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.kurale-regular {
+    font-family: "Antic", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  .title-font {
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px 60px;
+    height: auto;
+  }
+  
+
+  .middle-font {
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px 60px;
+
+  }
+  
+
+  .lower-font {
+    font-size:20 px;
+
+  }
+
+  h1 {
+    font-size: 30px ;
+    font-family: "Glass Antiqua", serif;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 4px;
+  }
+
+
 
 
 
@@ -110,12 +154,12 @@ body {
 
 
 
-.ceremonia, .evento, .mesa-regalos, .confirmar-asistencia , .resumen{
+.ceremonia, .evento, .mesa-regalos,  .resumen{
     padding:  1px  0px 1px  0px;
 
     background: #fff;
     border-width: 2px;
-    border-color: #e20000;
+
 
     margin: 0;
     border: none;
@@ -131,23 +175,162 @@ body {
     background-color: #ffffff;
 }
 
-
+ hr {
+            border: none; /* Elimina el borde predeterminado */
+            height: 2px; /* Altura del divider */
+            background: linear-gradient(to right, transparent, #000, transparent); /* Gradiente para un efecto elegante */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra debajo del divider */
+            margin: 50px 0; /* Espaciado arriba y abajo */
+        }
 
 button{
     margin: 0px 0px 20px 0px ;
     background: #fff;
     padding: 10px;
-    width: 80%;
+    width: 70%;
+    letter-spacing: 4.9px;
+    border-width: 1px 1px 1px 1px;
 }
 
-input{
+
+button:hover{
     margin: 0px 0px 20px 0px ;
+    background: #000000;
+    padding: 10px;
+    width: 70%;
+    letter-spacing: 4.9px;
+    border-width: 1px 1px 1px 1px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.footer{
+    padding:  1px  0px 1px  0px;
+    background: #505050;
+    padding: 10px;
+    height: 200px;
+    border: none;
+    align-content: center;
+
+}
+
+
+
+.footer img {
+    width: 70%;
+    vertical-align: middle;
+}
+
+
+.Font20{
+    font-size: 20px ;
+    font-family: "Antic", serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.2em;
+    letter-spacing: 4px;
+
+  }
+
+  .Font17{
+    font-size: 17px ;
+    font-family: "Antic", serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.2em;
+    letter-spacing: 3px;
+  }
+
+  .Font16{
+    font-size: 16px ;
+    font-family: "Antic", serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2em;
+
+  }
+
+  .Font12{
+    font-size: 12px ;
+    font-family: "Antic", serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+  }
+
+
+
+  .confirmar-asistencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* Estilizar el formulario */
+#rsvp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos del formulario */
+    width: 100%;
+    
+}
+
+/* Estilizar los inputs */
+input {
+    margin: 10px 0;
     background: #fff;
     padding: 10px;
-    width: 60%;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
+/* Estilizar los botones de radio */
 
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none; /* Safari */
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #1b1b1b;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    background-color: white;
+}
 
+input[type="radio"]:checked {
+    background-color: #000000;
+}
 
+input[type="radio"]:focus {
+    outline: 2px solid #000000;
+    outline-offset: 2px;
+}
 
+/* Align label to the right */
+.checkbox-group {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    margin: 5px 0;
+    width: 70%;
+}
+
+.checkbox-group label {
+    margin-left: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
